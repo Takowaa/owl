@@ -3,8 +3,7 @@ $(document).ready(function() {
         nav: true,
         items: 1,
         loop: true,
-        autoWidth: true,
-        autoplay: true,
+        autoplay: false,
         navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
 
     });
