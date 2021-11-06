@@ -12,71 +12,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 
     <header class="header">
         <div class="container">
-            <nav>
-                <ul class="menu">
-                    <img src="./img/logo_dark.png" alt="">
-                    <li>
-                        <a class="menu_link" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Shortcodes</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="head">
+                <span><img src="./img/logo_dark.png" alt=""></span>
+                <div class="menu_wrap">
+                    <ul class="menu">
+
+                        <li>
+                            <a class="menu_link" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Shortcodes</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mobile_menu">
+                    <a class="menu_btn " href="">
+                        <span></span>
+                    </a>
+                </div>
+
+            </div>
         </div>
+
     </header>
 
-    <div class="owl-carousel ">
-
-        <div class="slide">
-            <img class="slide__img" src="./img/mountain2.jpeg" alt="">
-            <div class="slide_content">
-                <h3 class="content__title">Unique and Modern Design</h3>
-                <h2 class="content__subtitle"> Welcome to Waxom</h2>
-                <p class="content__info"> This is an example of a slide built with our own <br> powerful and easy to use Veented Slider!</p>
-                <button class="content__btn">GET STARTED</button>
+    <section class="hero">
+        <div class="owl-carousel ">
+            <div class="slide">
+                <img class="slide__img" src="./img/mountain2.jpeg" alt="">
+                <div class="slide_content">
+                    <h3 class="content__title">Unique and Modern Design</h3>
+                    <h2 class="content__subtitle"> Welcome to Waxom</h2>
+                    <p class="content__info"> This is an example of a slide built with our own <br> powerful and easy to use Veented Slider!</p>
+                    <button class="content__btn">GET STARTED</button>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <img class="slide__img" src="./img/new_mountains.jpeg" alt="">
-            <div class="slide_content">
-                <h3 class="content__title">Unique and Modern Design</h3>
-                <h2 class="content__subtitle"> Awesome Portfolio Theme</h2>
-                <p class="content__info">Claritas est etiam processus dynamicus, qui sequitur mutationem <br> lectorum. Mutationem consuetudium lectorum.</p>
-                <button class="content__btn_slide_two">GET STARTED</button>
+            <div class="slide">
+                <img class="slide__img" src="./img/new_mountains.jpeg" alt="">
+                <div class="slide_content">
+                    <h3 class="content__title">Unique and Modern Design</h3>
+                    <h2 class="content__subtitle"> Awesome Portfolio Theme</h2>
+                    <p class="content__info">Claritas est etiam processus dynamicus, qui sequitur mutationem <br> lectorum. Mutationem consuetudium lectorum.</p>
+                    <button class="content__btn_slide_two">GET STARTED</button>
+                </div>
             </div>
-        </div>
-        <div class="slide">
+            <div class="slide">
 
-            <img class="slide__img" src="./img/rocks_2.jpeg" alt="">
-            <div class="slide_content">
-                <h3 class="content__title ">Unique and Modern Design</h3>
-                <h2 class="content__subtitle"> Fully Responsive Design</h2>
-                <p class="content__info">Claritas est etiam processus dynamicus, qui sequitur mutationem <br> lectorum. Mutationem consuetudium lectorum.</p>
-                <button class="content__btn">GET STARTED</button>
+                <img class="slide__img" src="./img/rocks_2.jpeg" alt="">
+                <div class="slide_content">
+                    <h3 class="content__title ">Unique and Modern Design</h3>
+                    <h2 class="content__subtitle"> Fully Responsive Design</h2>
+                    <p class="content__info">Claritas est etiam processus dynamicus, qui sequitur mutationem <br> lectorum. Mutationem consuetudium lectorum.</p>
+                    <button class="content__btn">GET STARTED</button>
+                </div>
             </div>
+
+
         </div>
-
-
-    </div>
+    </section>
 
 
 
@@ -88,7 +101,7 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/script.js"></script>
-    <script src="https://kit.fontawesome.com/cf14f4733b.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

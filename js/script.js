@@ -8,3 +8,11 @@ $(document).ready(function() {
 
     });
 });
+
+
+$('.mobile_menu').on('click', function(e) {
+    e.preventDefault();
+    $('.menu_btn').toggleClass('menu_active');
+    $('.menu_wrap').toggleClass('menu_active');
+
+});

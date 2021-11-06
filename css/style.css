@@ -17,6 +17,12 @@
     z-index: 9;
 }
 
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu {
     display: flex;
     list-style: none;
@@ -42,17 +48,22 @@
 
 .slide {
     height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide__img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .slide_content {
-    position: absolute;
-    top: 250px;
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -119,7 +130,7 @@
     height: 80px;
     width: 40px;
     color: #8c8c8c;
-    font-size: 60px;
+    font-size: 120px;
     border-radius: 3px;
 }
 
@@ -134,4 +145,91 @@
 
 .owl-next {
     right: 35px;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.menu_btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
+    position: relative;
+}
+
+.menu_btn span,
+.menu_btn span:before,
+.menu_btn span::after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    transition: all 0.4s linear;
+}
+
+.menu_btn span:before,
+.menu_btn span::after {
+    content: '';
+}
+
+.menu_btn span:before {
+    transform: translateY(-5px);
+}
+
+.menu_btn span::after {
+    transform: translateY(5px);
+}
+
+@media (max-width:992px) {
+    .mobile_menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .menu_btn.menu_active span:before {
+        width: 10px;
+        transform: rotate(-45deg);
+        transform-origin: left bottom;
+    }
+    .menu_btn.menu_active span:after {
+        width: 10px;
+        transform: rotate(45deg);
+        transform-origin: left top;
+    }
+    .menu_wrap {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .menu_wrap.menu_active {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        transition: all 0.5s linear;
+    }
+    .menu_wrap.menu_active .menu {
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    .menu_wrap.menu_active .menu li {
+        padding-top: 20px;
+    }
+    .menu_link {
+        margin: 0;
+    }
 }
