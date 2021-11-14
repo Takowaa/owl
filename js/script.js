@@ -11,10 +11,8 @@ $(document).ready(function() {
         loop: true, //Зацикливаем слайдер
         items: 1,
         nav: true,
-        navText: ["<div class='nav-button-two owl-prev'>‹</div>", "<div class='nav-button-two owl-next'>›</div>"],
-        autoplay: true, //Автозапуск слайдера
-        smartSpeed: 2000, //Время движения слайда
-        autoplayTimeout: 4000, //Время смены слайда
+        navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+
 
     });
     $(".slide_three").owlCarousel({
