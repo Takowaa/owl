@@ -5,6 +5,7 @@ $(document).ready(function() {
         loop: true,
         autoplay: false,
         navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+        dots: false,
 
     });
     $(".slide_two").owlCarousel({
@@ -12,7 +13,7 @@ $(document).ready(function() {
         items: 1,
         nav: true,
         navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
-
+        dots: false,
 
     });
     $(".slide_three").owlCarousel({
@@ -24,10 +25,10 @@ $(document).ready(function() {
         autoplayTimeout: 4000, //Время смены слайда
         responsive: { //Адаптация в зависимости от разрешения экрана
             0: {
-                items: 1
+                items: 2
             },
             600: {
-                items: 2
+                items: 4
             },
             1000: {
                 items: 5

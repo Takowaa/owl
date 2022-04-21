@@ -42,6 +42,12 @@
 }
 
 @media (max-width: 480px) {
+    .head {
+        display: block;
+    }
+    .menu li a {
+        margin-left: 0;
+    }
     .content__title {
         font-size: 16px;
     }
@@ -71,7 +77,7 @@
         margin-bottom: 40px;
     }
     .posts_content {
-        padding: 0px 29px 30px 29px;
+        padding: 25px 29px 30px 29px;
     }
     .title_post {
         margin-top: 40px;
